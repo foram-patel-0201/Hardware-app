@@ -4,6 +4,7 @@ public class model1
 {
     String category;
 
+
     public String getCategory() {
         return category;
     }

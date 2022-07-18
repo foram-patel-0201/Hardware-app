@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
                 list = new ArrayList<>();
-                adapter = new rv1adapter(MainActivity.this,list);
+                adapter = new rv1adapter(list);
                 recyclerView.setAdapter(adapter);
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
@@ -134,4 +134,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }
